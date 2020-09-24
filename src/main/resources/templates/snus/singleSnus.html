@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Snus</title>
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Details</h1>
+    <p>Customer ID: <span th:text="${snus.snusId}"></span></p>
+    <p>Customer First Name: <span th:text="${snus.name}"></span> </p>
+    <p>Customer Surname: <span th:text="${snus.brand}"></span></p>
+    <p>Customer Birthday: <span th:text="${snus.price}"></span> </p>
+    <p>Email: <span th:text="${snus.strength}"></span> </p>
+    <p>Customer Drivers License: <span th:text="${snus.country}"></span></p>
+</div>
+</body>
+</html>
+
+</body>
+</html>

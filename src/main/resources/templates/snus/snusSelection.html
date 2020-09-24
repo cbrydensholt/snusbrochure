@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Selection</title>
+</head>
+<body>
+<h1>Snus Selection</h1>
+
+
+
+
+<div class="container">
+
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Strength</th>
+            <th>Country</th>
+        </tr>
+
+
+        <tr th:each="snus : ${selection}">
+            <td th:text="${snus.snusId}"></td>
+            <td th:text="${snus.name}"></td>
+            <td th:text="${snus.brand}"></td>
+            <td th:text="${snus.price}"></td>
+            <td th:text="${snus.strength}">
+            <td th:text="${snus.country}">
+            <td><a th:href="@{/deletesnus(snusId=${snus.snusId})}"><button class="btn btn-del"> Delete </button></a></th>
+            <td><a th:href="@{/updatesnus(snusId=${snus.snusId})}"><button class="btn btn-ed"> Update </button></a></th>
+            <td><a th:href="@{/singlesnus(snusId=${snus.snusId})}"><button class="btn btn-details"> Details</button></a></td>
+
+        </tr>
+
+
+    </table>
+</div>
+
+
+</body>
+</html>
