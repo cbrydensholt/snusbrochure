@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class snusController {
+    
+    //update test
 
     @Autowired //binder controlleren sammen med service layer
     SnusService snusService;
